@@ -45,3 +45,7 @@ let fun = {
 };
 
 fun.inicio();
+
+function hola(){
+    
+}
