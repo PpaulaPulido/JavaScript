@@ -59,7 +59,7 @@ h1{
 .numero{
     background-color: #fff;
 }
-.simbolo,.raiz, .cos, .pi, .cubo, .decimal{
+.simbolo,.raiz, .eliminarDigito, .pi, .cubo, .decimal{
     background-color: #a3ffff;
 }
 .igual{

@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css" />
+
   </head>
   <body>
     <main>
@@ -27,7 +29,7 @@
             </div>
 
             <div class="cal_list">
-              <li class="cos">Cos</li>
+              <li class="cubo">x³</li>
               <li class="numero">2</li>
               <li class="numero">5</li>
               <li class="numero">8</li>
@@ -45,7 +47,7 @@
             </div>
             
             <div class="cal_list">
-              <li class="cubo">x³</li>
+              <li class="eliminarDigito"><i class="fa-sharp fa-solid fa-delete-left eliminarDigito"></i></li>
               <li class="simbolo">+</li>
               <li class="simbolo">-</li>
               <li class="simbolo">*</li>
@@ -55,7 +57,7 @@
           </ul>
           
         </div>
-        <div class="borrar">Borrar</div>
+        <div class="borrar" onclick="fun.borrarCalculadora()">Borrar</div>
       </div>
     </main>
     <script src="./js/index.js"></script>
