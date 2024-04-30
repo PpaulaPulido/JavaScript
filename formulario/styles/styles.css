@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: url('https://static4.depositphotos.com/1013369/304/i/450/depositphotos_3047005-stock-photo-aqua-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formulario{
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 5px 3px 4px 3px rgba(0,0,0,0.5);
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    padding: 10px;
+    margin: 10px auto;
+    width: 70%;
+}
+.form label{
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form input:not([type = "submit"]){
+    padding: 5px 10px; 
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.btn_submit{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    border: none;padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #00788d;
+    color: #fff;
+    cursor: pointer;
+}
+.btn_submit:hover{
+    background-color: #02aecc;
+}

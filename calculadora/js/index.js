@@ -5,9 +5,8 @@ let po = {
   operaciones: document.querySelector("#operaciones"),
   cantisig: 0,
   cantidadDeci: false,
-  resultado:false
+  resultado: false,
 };
-
 
 let fun = {
   inicio: function () {
@@ -15,39 +14,33 @@ let fun = {
       po.teclas[i].addEventListener("click", fun.oprimirTeclas);
     }
   },
-  oprimirTeclas: function (tecla) { 
+  oprimirTeclas: function (tecla) {
     po.accion = tecla.target.getAttribute("class");
     po.digito = tecla.target.innerHTML;
     fun.calculadora(po.accion, po.digito);
   },
   calculadora: function (accion, digito) {
-
-    switch(accion){
-
+    switch (accion) {
       case "numero":
         po.cantisig = 0;
-        if (po.operaciones.innerHTML == "0") { 
+        if (po.operaciones.innerHTML == "0") {
           po.operaciones.innerHTML = digito;
-
         } else {
-
-          if(po.resultado){
+          if (po.resultado) {
             po.resultado = false;
             po.operaciones.innerHTML = digito;
-          }else{
+          } else {
             po.operaciones.innerHTML += digito;
           }
-
         }
         break;
 
       case "simbolo":
-
-        po.cantisig ++;
-        if(po.cantisig === 1){
-          if(po.operaciones.innerHTML == "0"){
+        po.cantisig++;
+        if (po.cantisig === 1) {
+          if (po.operaciones.innerHTML == "0") {
             po.operaciones.innerHTML = 0;
-          }else{
+          } else {
             po.operaciones.innerHTML += digito;
             po.cantidadDeci = false;
             po.resultado = false;
@@ -63,8 +56,7 @@ let fun = {
         break;
 
       case "decimal":
-
-        if(!po.cantidadDeci && po.cantisig != 1){
+        if (!po.cantidadDeci && po.cantisig != 1) {
           po.operaciones.innerHTML += digito;
           po.cantidadDeci = true;
           po.resultado = false;
@@ -73,9 +65,9 @@ let fun = {
         break;
 
       case "eliminarDigito":
-        if(po.operaciones.innerHTML.length <= 1){
-          po.operaciones.innerHTML = '0';
-        }else{
+        if (po.operaciones.innerHTML.length <= 1) {
+          po.operaciones.innerHTML = "0";
+        } else {
           po.operaciones.innerHTML = po.operaciones.innerHTML.slice(0, -1);
         }
         po.resultado = false;
@@ -86,7 +78,7 @@ let fun = {
         console.log("pi");
         break;
       case "cubo":
-        po.operaciones.innerHTML = Math.pow(po.operaciones.innerHTML,3);
+        po.operaciones.innerHTML = Math.pow(po.operaciones.innerHTML, 3);
         po.resultado = true;
         console.log("cubo");
         break;
@@ -99,10 +91,10 @@ let fun = {
     }
   },
 
-  borrarCalculadora:function(){
+  borrarCalculadora: function () {
     po.resultado = false;
     po.operaciones.innerHTML = 0;
-  }
+  },
 };
 
 fun.inicio();
