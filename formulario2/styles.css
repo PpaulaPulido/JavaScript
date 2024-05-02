@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-image: url("https://images.unsplash.com/photo-1431440869543-efaf3388c585?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+}
+.container__Form {
+  padding: 20px;
+  width: 70%;
+  margin: 100px auto;
+}
+.formulario {
+  background-color: rgba(255, 255, 255, 0.37);
+  box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  width: 65%;
+  margin: 0 auto;
+}
+.form {
+  padding: 10px;
+  margin: 10px;
+}
+.form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.form label {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #7403a8;
+}
+.input {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 50%;
+}
+#ciudad {
+  width: 50%;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.check {
+  margin-top: 15px;
+  font-size: 18px;
+ 
+}
+.checkin {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.generodiv{
+  font-size: 18px;
+}
+.genero{
+  margin-bottom: 15px;
+}
+#texarea{
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.enviar {
+  width: 50%;
+  margin: 20px auto 0 auto;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #410292;
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

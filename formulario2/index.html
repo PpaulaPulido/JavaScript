@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container__Form">
+        <form  class="formulario" onsubmit="return validarFormulario()">
+            <div class="form">
+                <h2>Ingrese sus datos</h2>
+            </div>
+            <div class="form">
+                <label for="usuario"> Ingresar su usuario</label>
+                <input type="text" id="usuario" class="input" placeholder="Escriba el usuario con minimo de 2 caracteres y maximo 12 caracteres">
+            </div>
+            <div class="form">
+                <label for="contrasena">Ingrese su contraseña</label>
+                <input type="password" id="contrasena" class="input" placeholder="Escribe la contraseña con minimo 4 caracteres y maximo 8 caracteres y numeros">
+            </div>
+            <div class="form">
+                <label for="email">Ingrese su correo eletrónico</label>
+                <input type="email" id="email" class="input" placeholder="Escriba crrectamente su correo" >
+            </div>
+            <div class="form">
+                <label for="ciudad">Elija ciudad</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="1">Escoger</option>
+                    <option value="2">Bogotá</option>
+                    <option value="3">Medellin</option>
+                    <option value="4">Cartagena</option>
+                    <option value="5">Manizales</option>
+                </select>
+            </div>
+            <div class="form">
+                <label for="pasaTiempo">Seleccione sus pasatiempos</label>
+                <div class="check">
+                    <input type="checkbox" name="pasaTiempo" class="checkin">Caminar
+                    <br>
+                    <input type="checkbox" name="pasaTiempo" class="checkin">Nadar
+                    <br>
+                    <input type="checkbox" name="pasaTiempo" class="checkin">Leer
+                    <br>
+                    <input type="checkbox" name="pasaTiempo" class="checkin">Escuchar música
+                    <br>
+                    <input type="checkbox" name="pasaTiempo" class="checkin">Dormir
+                </div>
+            </div>
+            <div class="form">
+                <label for="genero">Seleccione su genero</label>
+                <div class="generodiv">
+                    <input type="radio" name="genero" class="genero">Hombre
+                    <br>
+                    <input type="radio" name="genero" class="genero">Mujer
+                </div>
+            </div>
+            <div class="form">
+                <textarea name="textarea" id="texarea" cols="70" rows="5" placeholder="Escribe Aquí"></textarea>
+            </div>
+            <div class="form">
+                <input type="checkbox" id="terminos"> Aceptos términos y condiciones
+            </div>
+            <div class="form">
+                <input type="submit" class="enviar">
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
